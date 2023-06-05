@@ -28,3 +28,49 @@ a {
   text-decoration: none;
   color: var(--blue)
 }
+
+.block-div {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999999999;
+  background: #fff;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-preload {
+  width: 75px;
+  height: 75px;
+  border: 3px solid var(--blue);
+  border-radius: 50%;
+  border-top: 3px solid var(--bg);
+  animation: spin 2s infinite;
+}
+
+.loadtitle {
+  margin: 1rem 0.7rem;
+  font-size: 13px
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(1200deg);
+  }
+}
+
+.bg-null {
+  background: transparent
+}
