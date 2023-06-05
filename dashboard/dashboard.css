@@ -1,0 +1,13 @@
+nav {
+  padding: 0.3rem;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 3px var(--color)
+}
+
+
+.right-icons {
+  right: 10px;
+  position: absolute;
+}
