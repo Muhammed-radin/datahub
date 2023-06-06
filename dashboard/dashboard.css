@@ -21,8 +21,8 @@ nav {
 }
 
 .action-chip {
-  width: 48%;
-  /*48% or 96px */
+  width: 180px;
+  /*180px or 96px or 48% */
   margin: 0.1rem;
   height: 96px;
   background: #5BA3D4;
@@ -36,18 +36,27 @@ nav {
   margin-top: 0.1rem;
 }
 
+.action-chip-icon {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%)
+}
 
-.action-chip:nth-child(2){
+.action-chip:nth-child(2) {
   background: #5DD466;
 }
 
-.action-chip:nth-child(3){
+.action-chip:nth-child(3) {
   background: #E05E5E;
 }
 
 .action-chip:nth-child(4) {
   background: #E8AA5E;
 }
+
 .action-chip:nth-child(5) {
   background: #CF69CC;
 }
@@ -58,8 +67,9 @@ nav {
 
 .action-chip-text {
   color: var(--invert-color);
+  font-size: 14px;
   position: absolute;
   bottom: 5px;
-  right: 8px;
-  text-shadow: 0px 0px 4px var(--grey)
+  left: 50%;
+  transform: translate(-50%)
 }
