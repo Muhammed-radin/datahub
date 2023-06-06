@@ -5,22 +5,22 @@
   transform: translate(-50%, -50%);
   background: var(--bg);
   z-index: 999999999;
-  border-radius: 8px;
+  border-radius: 7px;
   padding: 0.5rem 0.5rem;
   width: 40%;
   box-shadow: 0 0 8px  1px var(--grey);
   font-size: 13px;
   padding-bottom: 2.4rem;
-  animation: startfrombottom 0.5s 1;
+  animation: startfrombottom 0.2s 1;
 }
 
 @keyframes startfrombottom{
   0% {
-    transform: translate(-50%, 150%);
+    transform: translate(-50%, -50%) scale(0.4);
   }
   
   100% {
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%) scale(1)
   }
 }
 
