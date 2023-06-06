@@ -45,6 +45,14 @@ nav {
   transform: translate(-50%, -80%)
 }
 
+.action-chip:hover {
+  opacity: 0.9;
+  filter: blur(0.5px);
+  transition: 0.2s;
+  transform: scale(0.94);
+  z-index: 99
+}
+
 .action-chip:nth-child(2) {
   background: #5DD466;
 }
