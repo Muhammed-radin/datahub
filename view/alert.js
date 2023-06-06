@@ -2,7 +2,7 @@ var _alerting = false
 var _alertData = []
 var _alertIndex = 0
 
-function alert(head, msg) {
+function alert(head = 'Untitled', msg = '') {
   var _id = 'ALERT_ID_' + Math.floor(Math.random() * 99999)
   var html = `<div class="alert-modal" id="${_id}">
     <div class="alert-head">${head}</div>
