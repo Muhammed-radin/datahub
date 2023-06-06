@@ -25,10 +25,10 @@
 }
 
 .alert-head {
-  font-weight: bold;
+ font-weight: bold;
   font-size: 14px;
   margin: 0.2rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.2rem;
 }
 
 .alert-right {
