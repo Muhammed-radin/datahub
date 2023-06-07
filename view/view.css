@@ -81,3 +81,7 @@ a {
 .bg-null {
   background: transparent
 }
+
+.bg-ogrey {
+  background: #33333350;
+}
