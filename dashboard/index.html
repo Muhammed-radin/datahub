@@ -20,43 +20,86 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body onload="alert('Development mode','this is development mode')">
+<body onload="alert('Development mode','Development Mode lets you make changes to LookML files and to preview how they will affect content on your instance. The changes you make to LookML files in Development Mode do not affect the production environment, until they are pushed to the production environment.')">
   <nav>
     <div class="title">Datahub</div>
     <div class="right-icons">
       <ion-icon name="notifications-outline"></ion-icon>
     </div>
   </nav>
-  
-  
-  <div class="action-box">
-    <div class="action-chip">
-      <ion-icon name="document-text-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Forms</div>
+
+  <div class="scroll-body">
+
+    <div class="action-box">
+      <div class="action-chip">
+        <ion-icon name="document-text-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Forms</div>
+      </div>
+      <div class="action-chip">
+        <ion-icon name="folder-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Collections</div>
+      </div>
+      <div class="action-chip">
+        <ion-icon name="extension-puzzle-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Applications</div>
+      </div>
+      <div class="action-chip">
+        <ion-icon name="albums-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Tables</div>
+      </div>
+      <div class="action-chip">
+        <ion-icon name="book-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Documents</div>
+      </div>
+      <div class="action-chip">
+        <ion-icon name="code-outline" class="action-chip-icon"></ion-icon>
+        <div class="action-chip-text">Programs</div>
+      </div>
     </div>
-    <div class="action-chip">
-      <ion-icon name="folder-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Collections</div>
-    </div>
-    <div class="action-chip">
-      <ion-icon name="extension-puzzle-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Applications</div>
-    </div>
-    <div class="action-chip">
-      <ion-icon name="albums-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Tables</div>
-    </div>
-    <div class="action-chip">
-      <ion-icon name="book-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Documents</div>
-    </div>
-    <div class="action-chip">
-      <ion-icon name="person-outline" class="action-chip-icon"></ion-icon>
-      <div class="action-chip-text">Account</div>
+
+    <div class="main-card">
+      <p class="title">Applications</p>
+      <div class="cards">
+        
+        <div class="cardbox">
+          <div class="card-head">
+            <p>My Servers</p>
+            <div class="right-icons">
+              3days ago
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=400&t=st=1686128919~exp=1686129519~hmac=8690db41a9fe49b512ecfeb9adc1f04e46b1be5cb509bac1c278c275cc49276f" alt="card images" class="card-img">
+            <p class="card-des subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis possimus accusamus?</p>
+          </div>
+          <div class="card-footer">
+            <div class="author-name">Mr Computer Bot</div>
+            <div class="views">1.5k views</div>
+          </div>
+        </div>
+        
+        <div class="cardbox">
+          <div class="card-head">
+            <p>My Games</p>
+            <div class="right-icons">
+              1month ago
+            </div>
+          </div>
+          <div class="card-body">
+            <img src="https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149247164.jpg?w=400&t=st=1686128919~exp=1686129519~hmac=8690db41a9fe49b512ecfeb9adc1f04e46b1be5cb509bac1c278c275cc49276f" alt="card images" class="card-img">
+            <p class="card-des subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque repudiandae cum magni nam quam iste, magnam, facilis ipsam odit rerum unde consequatur sint ex adipisci. Consequuntur, accusantium nesciunt.</p>
+          </div>
+          <div class="card-footer">
+            <div class="author-name">Mr Computer Bot</div>
+            <div class="views">2.1k views</div>
+          </div>
+        </div>
+        
+      </div>
     </div>
   </div>
-  
-  
+
+
   <div class="bottom-menu-bar">
     <div class="bottom-menu-icon">
       <ion-icon name="home-outline" class="actived-button"></ion-icon>
@@ -74,7 +117,7 @@
       <ion-icon name="grid-outline"></ion-icon>
     </div>
   </div>
-  
+
   <script src="../view/view.js"></script>
 </body>
 
