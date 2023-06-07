@@ -1,0 +1,28 @@
+.bottom-menu-bar {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-menu-icon {
+  padding: 0.4rem;
+  padding-bottom: 0.2rem;
+  margin: 0.1rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.bottom-menu-icon ion-icon {
+  color: var(--grey);
+}
+
+.actived-button {
+  color: var(--blue) !important; 
+}
