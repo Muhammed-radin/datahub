@@ -4,4 +4,8 @@ function connectCommonScript(fileName){
   document.body.appendChild(script)
 }
 
+function redirctTo(url){
+  window.location.href = url
+}
+
 connectCommonScript('alert')
