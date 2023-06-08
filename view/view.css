@@ -90,3 +90,22 @@ a {
 .bg-ogrey {
   background: #33333350;
 }
+
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: var(--bg);
+  padding: 0.3rem;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.right-icons {
+  right: 10px;
+  position: absolute;
+}
