@@ -1,3 +1,4 @@
+/* light mode [beta] */
 :root {
   --blue: #4E81CD;
   --bg: white;
@@ -10,4 +11,22 @@
   --color: #000;
   --invert-color: #fff;
   --grey: #aaa;
+  --white: #fff;
 }
+
+/* dark mode 
+:root {
+  --blue: #4E81CD;
+  --bg: #222;
+  --sec-bg: #DCDFFF;
+  --green: #5DD466;
+  --red: #E05E5E;
+  --yellow: #E8AA5E;
+  --pink: #CF69CC;
+  --violet: #8C65D5;
+  --color: #fff;
+  --invert-color: #111;
+  --grey: #aaa;
+  --white: #fff;
+}
+*/
