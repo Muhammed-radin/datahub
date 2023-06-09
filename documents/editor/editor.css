@@ -1,0 +1,9 @@
+.title input {
+  border: 1px solid transparent;
+  outline: none;
+  font-weight: bold;
+}
+
+input:focus {
+  border: 2px solid var(--blue)
+}
