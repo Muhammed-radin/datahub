@@ -12,12 +12,14 @@
   --invert-color: #fff;
   --grey: #aaa;
   --white: #fff;
+  --lightgrey: #eee;
 }
 
 /* dark mode 
 :root {
   --blue: #4E81CD;
   --bg: #222;
+  --lightgrey: #eee;
   --sec-bg: #DCDFFF;
   --green: #5DD466;
   --red: #E05E5E;
