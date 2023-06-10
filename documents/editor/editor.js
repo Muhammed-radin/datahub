@@ -1,45 +1,29 @@
-function createInput() {
-  return document.createElement('input')
-}
+var toolbarOptions = [
+  ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+  ['blockquote', 'code-block'],
 
-var lineNumberIndex = 0
+  [{ 'header': 1 }, { 'header': 2 }], // custom button values
+  [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+  [{ 'script': 'sub' }, { 'script': 'super' }], // superscript/subscript
+  [{ 'indent': '-1' }, { 'indent': '+1' }], // outdent/indent
+  [{ 'direction': 'rtl' }], // text direction
 
-class Line {
-  constructor() {
-    this.number = lineNumberIndex += 1;
-    this.input = createInput()
-    this.attributes = 'class="h1"'
+  [{ 'size': ['small', false, 'large', 'huge'] }], // custom dropdown
+  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
 
-    document.body.appendChild(this.input)
-    this.input.style.opacity = '0%'
-  }
-}
+  [{ 'color': [] }, { 'background': [] }], // dropdown with defaults from theme
+  [{ 'font': [] }],
+  [{ 'align': [] }],
 
-var loopers = []
-setInterval(function(){
-  loopers.forEach(function (v) {
-    v()
-    console.log(v);
-  })
-})
+  ['clean'] // remove formatting button
+];
 
-
-var editor = document.getElementById('editor')
-var editorLine = [
-    new Line()
-  ]
-
-editor.onclick = function(e) {
-  var x = e.clientX,
-    y = e.clientY;
-  var totalLineHeightLength = lineNumberIndex * 12
-  if (editorLine.length == 1) {
-    editorLine[0].input.focus()
-    var id = 'INPUT_ID' + Math.floor(Math.random() * 999);
-    editor.innerHTML = '<p '+editorLine[0].attributes+' id="' + id + '">' + editorLine[0].input.value + '</p>'
-    
-    loopers.push(function (){
-      document.getElementById(id).innerHTML = editorLine[0].input.value
-    })
-  }
-}
+var quill = new Quill('#editor', {
+  modules: {
+    toolbar: {
+      container: document.getElementById('toolbar'), 
+      handlers: toolbarOptions
+    }
+  },
+  theme: 'snow'
+});
