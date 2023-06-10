@@ -7,3 +7,43 @@
 input:focus {
   border: 2px solid var(--blue)
 }
+
+#editor , .editor-div {
+  width: 90%;
+  height: 86vh;
+  border: 0;
+  overflow-wrap: break-word;
+  outline: none;
+  border: 1px solid black 
+}
+
+.tools-box {
+  width: 98%;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--lightgrey);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.tool {
+  padding: 0.25rem;
+}
+
+.tool ion-icon {
+  color: var(--grey);
+}
+
+.active ion-icon,
+.active {
+  color: var(--blue)
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 46px
+}
