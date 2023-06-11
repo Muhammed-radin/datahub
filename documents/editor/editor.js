@@ -1,4 +1,5 @@
 var toolbarOptions = [
+
   ['bold', 'italic', 'underline', 'strike'], // toggled buttons
   ['blockquote', 'code-block'],
 
@@ -20,10 +21,10 @@ var toolbarOptions = [
 
 var quill = new Quill('#editor', {
   modules: {
-    toolbar: {
+    toolbar: toolbarOptions,
+    /*{
       container: document.getElementById('toolbar'), 
-      handlers: toolbarOptions
-    }
+    }*/
   },
   theme: 'snow'
 });
