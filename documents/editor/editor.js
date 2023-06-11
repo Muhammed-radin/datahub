@@ -16,7 +16,7 @@ var toolbarOptions = [
   [{ 'font': [] }],
   [{ 'align': [] }],
 
-  ['clean'] // remove formatting button
+  ['link', 'clean'] // remove formatting button
 ];
 
 var quill = new Quill('#editor', {
@@ -28,3 +28,4 @@ var quill = new Quill('#editor', {
   },
   theme: 'snow'
 });
+
