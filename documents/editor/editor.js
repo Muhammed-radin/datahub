@@ -36,3 +36,16 @@ var quill = new Quill('#editor', {
 setInterval(function() {
   hljs.highlightAll();
 })
+
+var swaper = document.getElementById('swaper')
+
+var swap = false
+swaper.onclick = function() {
+  if (swap == false) {
+    document.querySelector('.ql-toolbar').style.display = 'none'
+    swap = true
+  } else {
+    document.querySelector('.ql-toolbar').style.display = ''
+    swap = false
+  }
+}

@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+nav ion-icon {
+  margin: 0.3rem;
+}
+
 input:focus {
   border: 2px solid var(--blue)
 }
