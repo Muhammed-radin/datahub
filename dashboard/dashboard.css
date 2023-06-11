@@ -157,3 +157,9 @@
     margin-bottom: 2rem;
   }
 }
+
+@media screen and (max-width: 380px){
+  .action-chip {
+    width: 48% !important;
+  }
+}

@@ -17,8 +17,13 @@ var toolbarOptions = [
   [{ 'align': [] }],
 
   ['link', 'clean'] // remove formatting button
+
 ];
 
+hljs.configure({
+  // optionally configure hljs 
+  languages: ['javascript','html', 'ruby', 'python', 'css', 'scss', 'java', 'shell', 'text']
+});
 
 var quill = new Quill('#editor', {
   modules: {
