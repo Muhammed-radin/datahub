@@ -77,3 +77,6 @@ input:focus {
   
 }
 
+pre {
+  font-family: monospace !important;
+}

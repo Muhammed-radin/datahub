@@ -19,8 +19,10 @@ var toolbarOptions = [
   ['link', 'clean'] // remove formatting button
 ];
 
+
 var quill = new Quill('#editor', {
   modules: {
+    syntax: true,
     toolbar: toolbarOptions,
     /*{
       container: document.getElementById('toolbar'), 
@@ -29,3 +31,8 @@ var quill = new Quill('#editor', {
   theme: 'snow'
 });
 
+
+
+setInterval(function() {
+  hljs.highlightAll();
+})
