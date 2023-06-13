@@ -22,8 +22,18 @@ var toolbarOptions = [
 
 hljs.configure({
   // optionally configure hljs 
-  languages: ['javascript','html', 'ruby', 'python', 'css', 'scss', 'java', 'shell', 'text']
+  languages: ['javascript', 'html', 'ruby', 'python', 'css', 'scss', 'java', 'shell', 'text']
 });
+
+var params = location.search.replace('?', '');
+var paramsString = '{"' + params.replaceAll("&", '","').replaceAll('=', '":"') + '"}';
+if (params == '') {} else {
+  var objectParams = JSON.parse(paramsString);
+  objectParams = objectParams
+
+}
+
+var isRead = objectParams == undefined ? false : (objectParams.read ? objectParams.read : false);
 
 var quill = new Quill('#editor', {
   modules: {
@@ -33,14 +43,22 @@ var quill = new Quill('#editor', {
       container: document.getElementById('toolbar'), 
     }*/
   },
-  theme: 'snow'
+  theme: 'snow',
+  readOnly: isRead
 });
 
-
+document.querySelector('.ql-toolbar') ? document.querySelector('.ql-toolbar').style.display = isRead ? 'none' : 'block' : null;
+objectParams ? quill.root.innerHTML = decodeURI(objectParams.delta) : 0
 
 setInterval(function() {
   hljs.highlightAll();
-})
+  if (history.pushState) {
+    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?delta='+quill.root.innerHTML+'&read=false';
+    window.history.pushState({ path: newurl }, '', newurl);
+  }
+  console.log(location.search);
+ //location.search = 'delta=' + JSON.stringify(quill.getContents())
+}, 500)
 
 var swaper = document.getElementById('swaper')
 
@@ -54,3 +72,4 @@ swaper.onclick = function() {
     swap = false
   }
 }
+
