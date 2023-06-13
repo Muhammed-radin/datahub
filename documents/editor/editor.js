@@ -49,7 +49,7 @@ var quill = new Quill('#editor', {
 
 document.querySelector('.ql-toolbar') ? document.querySelector('.ql-toolbar').style.display = isRead ? 'none' : 'block' : null;
 objectParams ? quill.root.innerHTML = decodeURI(objectParams.delta) : 0
-objectParams ? document.getElementById('titleInput').value = (objectParams.title) : 0
+objectParams ? document.getElementById('titleInput').value = decodeURI(objectParams.title) : 0
 
 
 setInterval(function() {
