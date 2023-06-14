@@ -55,10 +55,10 @@ objectParams ? document.getElementById('titleInput').value = decodeURI(objectPar
 setInterval(function() {
   hljs.highlightAll();
   if (history.pushState) {
-    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?delta='+quill.root.innerHTML+'&read=false&title='+document.getElementById('titleInput').value;
+    var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?delta=' + quill.root.innerHTML + '&read=false&title=' + document.getElementById('titleInput').value;
     window.history.pushState({ path: newurl }, '', newurl);
   }
- //location.search = 'delta=' + JSON.stringify(quill.getContents())
+  //location.search = 'delta=' + JSON.stringify(quill.getContents())
 }, 100)
 
 var swaper = document.getElementById('swaper')
@@ -73,4 +73,3 @@ swaper.onclick = function() {
     swap = false
   }
 }
-

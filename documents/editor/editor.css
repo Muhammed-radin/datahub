@@ -12,13 +12,14 @@ input:focus {
   border: 2px solid var(--blue)
 }
 
-#editor , .editor-div {
+#editor,
+.editor-div {
   width: 98%;
   height: 88vh;
   border: 0 !important;
   overflow-wrap: break-word;
   outline: none;
-  border: 1px solid black 
+  border: 1px solid black
 }
 
 /*#editor {
@@ -33,13 +34,17 @@ input:focus {
   overflow: hidden;
   margin: 0;
   overflow-wrap: break-word;
+  max-height: calc(100%-100px)
 }
 
-.tools-box,.toolbar , .ql-toolbar {
+.tools-box,
+.toolbar,
+.ql-toolbar {
   height: max-content;
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   left: 0;
+  opacity: 90%;
   border: 0 !important;
   background: var(--bg);
   /*display: flex;
@@ -78,7 +83,7 @@ input:focus {
   outline: none !important;
   width: 100% !important;
   overflow-wrap: break-word !important;
-  
+
 }
 
 pre {
